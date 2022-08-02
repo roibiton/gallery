@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>book-librery</title>
+</head>
+
+<body onload="onInit()">
+    <h1>books-app</h1>
+    <section class="book-filter" >
+        <h2>Filter</h2>
+        <select class="filter-title-select" onchange="onSetFilterBy({title: this.value})"></select>
+        <label>
+            price:
+            <input type="range" min="0" max="1500" value="900" class="filter-price-range"
+                onchange="this.title=this.value;onSetFilterBy({price: this.value})" />
+        </label>
+        <hr />
+        <div>
+            Sort by:
+            <select class="sort-by" onchange="onSetSortBy()">
+                <option value="">Select Sorting</option>
+                <option value="title">by name</option>
+                <option value="price">price</option>
+            </select>
+            <label>
+                Descending
+                <input class="sort-desc" type="checkbox" oninput="onSetSortBy()" />
+            </label>
+        </div>
+    </section>
+    <button title="Add book" onclick="onAddBook()">Add-book</button>
+    <table border="1">
+    <tr>
+        <th >id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>actions</th>
+    </tr>
+    <tbody class="books-container"></tbody>
+</table>
+    <button onclick="onNextPage()">Next Page</button>
+    <div class="modal">
+        <h3></h3>
+        <h4>price: <span></span> </h4>
+        <h5>book Description</h5>
+        <p></p>
+        <button onclick="onCloseModal()">Close</button>
+    </div>
+    <div class="user-msg"></div>
+    <script src="js/services/util.service.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/book.service.js"></script>
+    <script src="js/book.controller.js"></script>
+
+
+
+</body>
+
+</html>

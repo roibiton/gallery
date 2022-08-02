@@ -1,0 +1,41 @@
+body img {
+    width: 350px;
+    position: absolute;
+    left: 35%;
+}
+
+.buttonStyle1 {
+    padding: 43px;
+    right: 40%;
+    position: absolute;
+    bottom: 1ch;
+    height: 63px;
+    width: 324px;
+    background-color: yellowgreen;
+}
+
+.buttonStyle2 {
+    padding: 43px;
+    right: 40%;
+    position: absolute;
+    position: fixed;
+    bottom: 15ch;
+    height: 63px;
+    width: 324px;
+    background-color: yellowgreen;
+
+}
+.btn{
+    height: 63px;
+    width: 324px;
+    left: 10%;
+    background-color: red;
+    position: absolute;
+    position: fixed;
+    bottom: 10ch;
+    display: none;
+
+}
+body{
+    background-color:skyblue
+}

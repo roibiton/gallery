@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mineSweeper</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body onload="initGame()">
+    <div class ="time">0.0</div>
+    <div class ="lives">❤❤❤</div>
+    <button class="btn" onclick="level1()">level1</button>
+    <button class="btn" onclick="level2()">level2</button>
+    <button class="btn" onclick="level3()">level3</button>
+    <button class="btn" onclick="undo()">undo</button>
+    <button class="btn" onclick="restartGame()">resrart</button>
+    <table>
+        <tbody class="board">
+            
+        </tbody>
+    </table>
+    <button class="btn safe" hidden="true" onclick="safeClick()">safe click</button>
+    <hr>
+    <img class="image" src="img/bg.gif" />
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

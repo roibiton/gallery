@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Safe Content</title>
+</head>
+
+
+<body onload="onInit()">
+    <h1>Safe Content</h1>
+
+    <div class="user-info" hidden>
+        <h3>Welcome <span></span></h3>
+        <img src="secret.jpg" />
+        <button class="btn log-out" onclick="onLogout()">Logout</button>
+    </div>
+
+
+    <form class="form-login" onsubmit="onLogin(event)">
+        <h2>Login</h2>
+        <div>
+            <input name="username" type="text" placeholder="your username.." value="puki" />
+        </div>
+        <div>
+            <input name="password" type="password" placeholder="your password" value="12345" />
+        </div>
+        <button class="btn log-in">Login</button>
+    </form>
+    <div>
+        <a class="link-admin" hidden href="admin.html">Admin Page</a>
+    </div>
+    
+    <script src="js/services/utils.js"></script>
+    <script src="js/services/storage.service.js"></script>
+    <script src="js/services/user.service.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

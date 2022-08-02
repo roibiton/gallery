@@ -1,0 +1,12 @@
+.link-admin {
+    text-decoration: none;
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.link-admin:hover {
+    background-color: blueviolet;
+    color: white
+}
